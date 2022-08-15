@@ -8,7 +8,7 @@ def index():
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'fav.ico', mimetype='image/vnd.microsoft.icon')
+                               'discord-logo.png')
 
 @app.route("/info")
 def info():

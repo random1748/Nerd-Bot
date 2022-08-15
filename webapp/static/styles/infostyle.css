@@ -1,0 +1,83 @@
+#navimg {
+    width: 32px;
+    height: 32px;
+}
+
+body {
+    background: linear-gradient(-45deg, #75c242, #2fa535, #1d6821, #344d39);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#navbar {
+    list-style-type: none;
+    min-width: auto;
+    box-shadow: var(--bs-sm);
+    margin: 0%;
+    padding: 0;
+    width: 100%;
+    background-color: #353f32;
+    height: 60px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0, 0;
+}
+
+#headertxt {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    left: 50%;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+p {
+    color: #6bff72;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+}
+#title {
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 60px;
+    color: #cbffca;
+    position: relative;
+}

@@ -1,98 +1,15 @@
 <html>
     <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/infostyle.css') }}">
         <title>nerd-bot</title>
     </head>
 <body>
-    <style>
-        img {
-            width: 32px;
-            height: 32px;
-        }
-        body {
-            background-image: linear-gradient(to bottom right, #438530, #4b6444);
-          }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            }
-    
-        li {
-            float: left;
-            }
-    
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-    
-        li a:hover {
-            background-color: #111;
-            }
-        #navbar {
-            list-style-type: none;
-            min-width: auto;
-            box-shadow: var(--bs-sm);
-            margin: 0%;
-            padding: 0;
-            width: 100%;
-            background-color: #394d34;
-            height: 60px;
-            display: flex;
-            position: relative;
-            align-items: center;
-            padding: 0, 0;
-        }
-        #headertxt {
-            text-align: center;
-            font-size: 30px;
-            color:rgb(255, 255, 255);
-            left: 50%;
-            
-        }
-        #title {
-            border-radius: 25px;
-            text-align: center;
-            font-family: proxima-nova, sans-serif;
-            font-weight: 600;
-            letter-spacing: 2px;
-            font-size: 45px;
-            color: #cbffca;
-            position: relative;
-        }
-        #undertitle {
-            border-radius: 25px;
-            text-align: center;
-            font-family: proxima-nova, sans-serif;
-            font-weight: 400;
-            letter-spacing: 2px;
-            font-size: 30px;
-            color: #cbffca;
-            position: relative;
-            left: 50%;
-            bottom: 45%;
-            transform: translate(-50%, -50%);
-            margin: 0 auto;
-        }
-        p {
-            font-family: proxima-nova, sans-serif;
-            font-weight: 400;
-            letter-spacing: 2px;
-            font-size: 30px;
-            color: #cbffca;
-        }
-        </style>
-        <ul id="navbar">
-            <li><a href="/"><img src="/static/discord-logo.png" alt="icon"></a></li>
-            <li><a href="/" id="headertxt"><p id="headertxt">Nerd Bot</p></a></li>
-            <li><a href="/info"><p id="headertxt">Info</p></a></li>
-            <li><a href="https://github.com/random1748/Nerd-Bot/tree/main/nerd-bot"><p id="headertxt">Github</p></a></li>
-            </ul>
+    <ul id="navbar">
+        <li><a href="/"><img id="navimg" src="/static/discord-logo.png" alt="icon"></a></li>
+        <li><a href="/" id="headertxt"><p id="headertxt">Nerd Bot</p></a></li>
+        <li><a href="/info"><p id="headertxt">Info</p></a></li>
+        <li><a href="https://github.com/random1748/Nerd-Bot/tree/main/nerd-bot"><p id="headertxt">Github</p></a></li>
+        </ul>
         <h1 id="title">All Bot Functions</h1>
                     
             <p style="font-size: 40px;">Music Commands:</p>
