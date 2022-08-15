@@ -1,0 +1,169 @@
+<html>
+<head>
+    <title>nerd-bot</title>
+</head>
+
+
+<body>
+    <style>
+    img {
+        width: 32px;
+        height: 32px;
+    }
+    body {
+        
+        background-image: linear-gradient(to bottom right, #438530, #4b6444);
+      }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
+
+    li {
+        float: left;
+        }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+    li a:hover {
+        background-color: #111;
+        }
+    #navbar {
+        list-style-type: none;
+        min-width: auto;
+        box-shadow: var(--bs-sm);
+        margin: 0%;
+        padding: 0;
+        width: 100%;
+        background-color: #394d34;
+        height: 60px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding: 0, 0;
+    }
+    #headertxt {
+        text-align: center;
+        font-size: 30px;
+        color:rgb(255, 255, 255);
+        left: 50%;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 300;
+    }
+    #title {
+        border-radius: 25px;
+        text-align: center;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 60px;
+        color: #cbffca;
+        position: fixed;
+        left: 50%;
+        bottom: 55%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+    }
+    #undertitle {
+        border-radius: 25px;
+        text-align: center;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 30px;
+        color: #cbffca;
+        position: fixed;
+        left: 50%;
+        bottom: 45%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+    }
+    #features {
+        border-radius: 25px;
+        text-align: center;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-size: 20px;
+        color: #b4dfb3;
+        position: fixed;
+        left: 50%;
+        bottom: 20%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+    }
+    #srvrlnk {
+        color: #cbffca;
+        padding: 35px 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 400;
+        }
+    
+    #srvrdiv {
+        border-radius: 25px;
+        background-color: #6de26b;
+        color: #cbffca;
+        width: 140px;
+        height: 90px;
+        position: fixed;
+        left: 45%;
+        bottom: 20px;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        box-shadow: 10px 10px 5px 5px #394d34;
+        
+    }
+    #srvrdiv2 {
+        border-radius: 25px;
+        background-color: #90bb8f;
+        color: #cbffca;
+        width: 140px;
+        height: 90px;
+        position: fixed;
+        left: 55%;
+        bottom: 20px;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        box-shadow: 10px 10px 5px 5px #394d34;
+        
+    }
+    #left {
+        position: fixed;
+        left: 0px;
+        top: 20%
+    }
+    </style>
+
+    <ul id="navbar">
+    <li><a href="/"><img src="/static/discord-logo.png" alt="icon"></a></li>
+    <li><a href="/" id="headertxt"><p id="headertxt">Nerd Bot</p></a></li>
+    <li><a href="/info"><p id="headertxt">Info</p></a></li>
+    <li><a href="https://github.com/random1748/Nerd-Bot/tree/main/nerd-bot"><p id="headertxt">Github</p></a></li>
+    </ul>
+
+    <h1 id="title">A Better Way To Use Discord</h1>
+    <p id="undertitle">Configure moderation, leveling, and custom commands without the fuss</p>
+    <p id="features">
+        React Roles, <br>
+        Custom Commands, <br>
+        Music Capibilities, <br>
+        Level System, <br>
+        And so much more
+    </p>
+    <p id="srvrdiv" style="text-align:center"><a id="srvrlnk" href="https://discord.com/api/oauth2/authorize?client_id=832946537323167785&permissions=8&scope=bot" target="_blank">Add To Server</a></p>
+    <p id="srvrdiv2" style="text-align:center"><a id="srvrlnk" href="/info" target="_blank">More Info</a></p>
+    <div id="left"><iframe src="https://discord.com/widget?id=884953799490408468&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
+</body>
+</html>
