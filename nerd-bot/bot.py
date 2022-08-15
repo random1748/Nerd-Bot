@@ -173,6 +173,20 @@ async def r(ctx, msg: str, times: int):
     if times < 300:
         for i in range(times):
             await ctx.send(msg)
+@bot.command()
+async def sudo(ctx, member: discord.Member, *, message=None):
+
+        if message == None:
+                await ctx.send(f'Who do you want to impersonate?')
+                return
+        await ctx.message.delete()
+        webhook = await ctx.channel.create_webhook(name=member.name)
+        await webhook.send(
+            str(message), username=member.name, avatar_url=member.avatar_url)
+
+        webhooks = await ctx.channel.webhooks()
+        for webhook in webhooks:
+                await webhook.delete()
 
 @bot.command(brief='find top ten results on google for the message')
 async def se(ctx, *, query: str):
